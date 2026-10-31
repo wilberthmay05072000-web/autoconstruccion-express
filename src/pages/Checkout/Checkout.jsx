@@ -714,7 +714,7 @@ Gracias por tu pedido.
                                 <span className="payment-terminal-image">
 
                                     <img
-                                        src="/images/payment/terminal-mercado-pago.png"
+                                        src={`${import.meta.env.BASE_URL}images/payment/terminal-mercado-pago.png`}
                                         alt="Terminal Mercado Pago"
                                     />
 

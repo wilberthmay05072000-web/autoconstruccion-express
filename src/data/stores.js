@@ -5,7 +5,7 @@ export const stores = [
         name: "Maruchan",
         location: "auto",
         description: "Rapido y Practico",
-        image: "/images/stores/maruchan.png",
+        image: `${import.meta.env.BASE_URL}images/stores/maruchan.png`,
 
         schedule: {
             monday: ["19:30", "23:59"],
@@ -23,7 +23,7 @@ export const stores = [
         name: "Tortas Misi",
         location: "cerca-auto",
         description: "Tortas",
-        image: "/images/stores/Tortas-misi.jpeg",
+        image: `${import.meta.env.BASE_URL}images/stores/Tortas-misi.jpeg`,
 
         schedule: {
             monday: ["19:30", "20:20"],
@@ -41,7 +41,7 @@ export const stores = [
         name: "Burger's Cordova",
         location: "cerca-auto",
         description: "Tacos, Hamburguesas y mas",
-        image: "/images/stores/burger_cordova.jpeg",
+        image: `${import.meta.env.BASE_URL}images/stores/burger_cordova.jpeg`,
 
         schedule: {
             monday: ["19:30", "22:20"],
@@ -59,7 +59,7 @@ export const stores = [
         name: "Sanchez Tacos Mex",
         location: "cerca-auto",
         description: " ",
-        image: "/images/stores/sanchez_tacos_mex.jpeg",
+        image: `${import.meta.env.BASE_URL}images/stores/sanchez_tacos_mex.jpeg`,
 
         schedule: {
             monday: ["19:30", "22:20"],
@@ -78,7 +78,7 @@ export const stores = [
         name: "Tortas Salvajes",
         location: "meche",
         description: "Tortas, hamburguesas y más.",
-        image: "/images/stores/tortas-salvajes.jpeg",
+        image: `${import.meta.env.BASE_URL}images/stores/tortas-salvajes.jpeg`,
 
         schedule: {
             monday: ["19:30", "22:20"],
@@ -96,7 +96,7 @@ export const stores = [
         name: "Tacos Rosy",
         location: "meche",
         description: "Comida preparada.",
-        image: "/images/stores/tacos-rosy.png",
+        image: `${import.meta.env.BASE_URL}images/stores/tacos-rosy.png`,
 
         schedule: {
             monday: ["19:30", "22:20"],
@@ -115,7 +115,7 @@ export const stores = [
         name: "Pastor López",
         location: "meche",
         description: "Tacos y Tortas",
-        image: "/images/stores/pastor-lopez.jpeg",
+        image: `${import.meta.env.BASE_URL}images/stores/pastor-lopez.jpeg`,
 
         schedule: {
             monday: ["19:30", "22:20"],

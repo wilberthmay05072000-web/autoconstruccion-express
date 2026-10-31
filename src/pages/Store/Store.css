@@ -1,0 +1,456 @@
+.store-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 20px 16px 60px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0, 217, 255, 0.06),
+            transparent 35%
+        );
+}
+
+
+/* =========================
+   VOLVER
+========================= */
+
+.back-button {
+    display: block;
+
+    margin: 0 auto 24px;
+
+    padding: 8px 0;
+
+    border: none;
+    background: transparent;
+
+    color: #00d9ff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.back-button:active {
+    transform: translateX(-3px);
+}
+
+
+/* =========================
+   STORE HEADER
+========================= */
+
+.store-header {
+    max-width: 1000px;
+
+    margin: 0 auto 45px;
+
+    overflow: hidden;
+
+    background: #10161e;
+
+    border: 1px solid #1e2a38;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+.store-header-image {
+    width: 100%;
+    height: 220px;
+}
+
+
+.store-header-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.store-header-info {
+    padding: 22px;
+}
+
+
+.store-label {
+    color: #00d9ff;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+.store-header-info h1 {
+    margin: 8px 0;
+
+    color: #f4f7fb;
+
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+
+.store-header-info p {
+    margin: 0 0 18px;
+
+    color: #8794a5;
+
+    font-size: 14px;
+}
+
+
+.store-page-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 7px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+.store-page-status.open {
+    color: #00f5a0;
+}
+
+
+.store-page-status.closed {
+    color: #ff3d6e;
+}
+
+
+.store-page-hours {
+    display: block;
+
+    color: #7f8c9c;
+
+    font-size: 13px;
+}
+
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+}
+
+
+.store-page-status.open .status-dot {
+    background: #00f5a0;
+
+    box-shadow:
+        0 0 10px #00f5a0;
+}
+
+
+.store-page-status.closed .status-dot {
+    background: #ff3d6e;
+
+    box-shadow:
+        0 0 10px #ff3d6e;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories-section {
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+.categories-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+.categories-title span {
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0, 217, 255, 0.35),
+            transparent
+        );
+}
+
+
+.categories-title h2 {
+    margin: 0;
+
+    color: #f1f5fa;
+
+    font-size: 18px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   CATEGORY GRID
+========================= */
+
+.categories-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+}
+
+
+.category-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    min-height: 90px;
+
+    background: #10161e;
+
+    border: 1px solid #1e2a38;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.category-card:active {
+    transform: scale(0.98);
+}
+
+
+.category-icon {
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(0, 217, 255, 0.07);
+
+    border: 1px solid
+        rgba(0, 217, 255, 0.15);
+
+    font-size: 26px;
+}
+
+
+.category-info {
+    flex: 1;
+}
+
+
+.category-info h3 {
+    margin: 0 0 4px;
+
+    color: #f2f5f8;
+
+    font-size: 17px;
+}
+
+
+.category-info p {
+    margin: 0;
+
+    color: #778596;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+.category-arrow {
+    color: #00d9ff;
+
+    font-size: 22px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.category-card:hover .category-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   NOT FOUND
+========================= */
+
+.store-not-found {
+    min-height: 80vh;
+
+    display: grid;
+    place-content: center;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+
+.store-not-found h1 {
+    color: #f2f5f8;
+}
+
+
+.store-not-found button {
+    padding: 12px 20px;
+
+    color: #00d9ff;
+
+    background: transparent;
+
+    border: 1px solid #00d9ff;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 600px) {
+
+    .store-page {
+        padding:
+            30px 24px 70px;
+    }
+
+
+    .store-header {
+        display: grid;
+
+        grid-template-columns:
+            42% 58%;
+    }
+
+
+    .store-header-image {
+        height: 100%;
+        min-height: 280px;
+    }
+
+
+    .store-header-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 30px;
+    }
+
+
+    .store-header-info h1 {
+        font-size: 36px;
+    }
+
+
+    .categories-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================
+   COMPUTER
+========================= */
+
+@media (min-width: 1024px) {
+
+    .store-page {
+        padding:
+            40px 40px 80px;
+    }
+
+
+    .store-header {
+        border-radius: 20px;
+    }
+
+
+    .store-header-info {
+        padding: 40px;
+    }
+
+
+    .store-header-info h1 {
+        font-size: 44px;
+    }
+
+
+    .categories-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+
+    .category-card:hover {
+        transform: translateY(-3px);
+
+        background: #121b25;
+
+        border-color:
+            rgba(0, 217, 255, 0.45);
+
+        box-shadow:
+            0 8px 25px rgba(0, 0, 0, 0.3),
+            0 0 18px rgba(0, 217, 255, 0.06);
+    }
+
+}

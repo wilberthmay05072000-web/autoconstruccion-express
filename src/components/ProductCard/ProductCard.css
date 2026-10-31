@@ -1,0 +1,219 @@
+.product-card {
+    width: 100%;
+    overflow: hidden;
+
+    background: #10161e;
+
+    border: 1px solid #1e2a38;
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.product-card:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   IMAGEN
+========================= */
+
+.product-image-container {
+    width: 100%;
+    height: 190px;
+
+    overflow: hidden;
+
+    background: #0c1219;
+}
+
+
+.product-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.product-card:hover .product-image {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.product-card-info {
+    padding: 16px;
+}
+
+
+.product-card-info h3 {
+    margin: 0 0 7px;
+
+    color: #f3f6fa;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.product-card-info p {
+    min-height: 38px;
+
+    margin: 0 0 14px;
+
+    color: #7f8c9c;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================
+   PRECIO
+========================= */
+
+.product-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product-price {
+    color: #00d9ff;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    text-shadow:
+        0 0 10px rgba(0, 217, 255, 0.25);
+}
+
+
+.product-arrow {
+    display: grid;
+    place-items: center;
+
+    width: 34px;
+    height: 34px;
+
+    color: #00d9ff;
+
+    border: 1px solid
+        rgba(0, 217, 255, 0.25);
+
+    border-radius: 9px;
+
+    font-size: 18px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.product-card:hover .product-arrow {
+    transform: translateX(3px);
+
+    background:
+        rgba(0, 217, 255, 0.08);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 600px) {
+
+    .product-image-container {
+        height: 210px;
+    }
+
+    .product-card-info {
+        padding: 18px;
+    }
+
+}
+
+
+/* =========================
+   COMPUTADORA
+========================= */
+
+@media (min-width: 1024px) {
+
+    .product-card:hover {
+        transform: translateY(-4px);
+
+        border-color:
+            rgba(0, 217, 255, 0.45);
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.35),
+            0 0 18px rgba(0, 217, 255, 0.06);
+    }
+
+}
+
+
+
+
+/* =========================================
+   PRODUCTOS SIN IMAGEN
+   ========================================= */
+
+.product-card-no-image {
+    min-height: auto;
+}
+
+.product-card-no-image .product-card-info {
+    padding-top: 18px;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (min-width: 768px) {
+
+    .product-card-no-image {
+        min-height: auto;
+    }
+
+    .product-card-no-image .product-card-info {
+        padding-top: 18px;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 1024px) {
+
+    .product-card-no-image .product-card-info {
+        padding-top: 18px;
+    }
+
+}

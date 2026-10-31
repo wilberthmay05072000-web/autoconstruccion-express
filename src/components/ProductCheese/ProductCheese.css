@@ -1,0 +1,176 @@
+.cheese-product-content {
+    margin-top: 25px;
+}
+
+.cheese-options {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.cheese-option {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 15px 10px;
+
+    color: #a8b3c0;
+
+    background: #0d141c;
+
+    border: 1px solid #263442;
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+.cheese-option strong {
+    color: #00d9ff;
+
+    font-size: 17px;
+}
+
+.cheese-option.selected {
+    color: #ffffff;
+
+    background:
+        rgba(0, 217, 255, 0.08);
+
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 0 15px rgba(0, 217, 255, 0.12);
+}
+
+.cheese-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 25px;
+
+    color: #f2f5f8;
+
+    font-weight: 700;
+}
+
+.cheese-quantity-control {
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid #263442;
+    border-radius: 10px;
+}
+
+.cheese-quantity-control button {
+    width: 42px;
+    height: 42px;
+
+    color: #00d9ff;
+
+    background: #101820;
+
+    border: none;
+
+    font-size: 22px;
+}
+
+.cheese-quantity-control strong {
+    min-width: 40px;
+
+    text-align: center;
+}
+
+.cheese-add-button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    color: #00d9ff;
+
+    background: transparent;
+
+    border: 1px solid #00d9ff;
+    border-radius: 11px;
+
+    font-weight: 800;
+}
+
+@media (min-width: 768px) {
+
+    .cheese-add-button:hover {
+        color: #061016;
+
+        background: #00d9ff;
+    }
+
+}
+
+
+.add-product-button.added {
+    background: #19d36b;
+    color: #061018;
+
+    box-shadow:
+        0 0 18px rgba(25, 211, 107, 0.35);
+}
+
+
+
+.product-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.product-comment label {
+    color: #8b98a8;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.product-comment textarea {
+    width: 100%;
+
+    min-height: 80px;
+
+    box-sizing: border-box;
+
+    padding: 12px 13px;
+
+    border: 1px solid #263442;
+    border-radius: 9px;
+
+    background: #0a1118;
+    color: #ffffff;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    resize: vertical;
+
+    transition: 0.2s;
+}
+
+.product-comment textarea:focus {
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 0 0 2px rgba(0, 217, 255, 0.08);
+}
+
+.product-comment textarea::placeholder {
+    color: #526170;
+}

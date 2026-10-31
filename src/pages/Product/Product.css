@@ -1,0 +1,245 @@
+.product-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 20px 16px 60px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0, 217, 255, 0.07),
+            transparent 35%
+        );
+}
+
+
+.product-back {
+    display: block;
+
+    margin: 0 auto 25px;
+
+    padding: 8px 0;
+
+    color: #00d9ff;
+
+    background: transparent;
+
+    border: none;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.product-detail {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #10161e;
+
+    border: 1px solid #1e2a38;
+
+    border-radius: 18px;
+}
+
+
+.product-detail-image {
+    width: 100%;
+    height: 280px;
+
+    background: #0b1118;
+}
+
+
+.product-detail-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.product-detail-info {
+    padding: 22px;
+}
+
+
+.product-store-name {
+    color: #00d9ff;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.product-detail-info h1 {
+    margin: 8px 0 10px;
+
+    color: #f3f6fa;
+
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+
+.product-description {
+    margin: 0;
+
+    color: #8290a0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   PRODUCTO SIN IMAGEN
+   ========================================= */
+
+.product-detail-no-image {
+    max-width: 650px;
+}
+
+
+.product-detail-no-image .product-detail-info {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PRODUCTO NO ENCONTRADO
+   ========================================= */
+
+.product-not-found {
+    min-height: 80vh;
+
+    display: grid;
+    place-content: center;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+
+.product-not-found h1 {
+    color: #f3f6fa;
+}
+
+
+.product-not-found button {
+    padding: 12px 20px;
+
+    color: #00d9ff;
+
+    background: transparent;
+
+    border: 1px solid #00d9ff;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (min-width: 600px) {
+
+    .product-page {
+        padding:
+            30px 24px 70px;
+    }
+
+
+    .product-detail {
+        display: grid;
+
+        grid-template-columns:
+            45% 55%;
+    }
+
+
+    .product-detail-image {
+        height: 100%;
+
+        min-height: 500px;
+    }
+
+
+    .product-detail-info {
+        padding: 35px;
+    }
+
+
+    /* Producto sin imagen */
+
+    .product-detail-no-image {
+        display: block;
+
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .product-detail-no-image .product-detail-info {
+        padding: 35px;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 1024px) {
+
+    .product-page {
+        padding:
+            40px 40px 80px;
+    }
+
+
+    .product-detail {
+        border-radius: 20px;
+    }
+
+
+    .product-detail-info {
+        padding: 45px;
+    }
+
+
+    .product-detail-info h1 {
+        font-size: 42px;
+    }
+
+
+    /* Producto sin imagen */
+
+    .product-detail-no-image {
+        max-width: 700px;
+    }
+
+
+    .product-detail-no-image .product-detail-info {
+        padding: 45px;
+    }
+
+}

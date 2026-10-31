@@ -1,0 +1,262 @@
+.category-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 20px 16px 60px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0, 217, 255, 0.06),
+            transparent 35%
+        );
+}
+
+
+/* =========================
+   VOLVER
+========================= */
+
+.category-back {
+    display: block;
+
+    margin: 0 auto 28px;
+
+    padding: 8px 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #00d9ff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.category-header {
+    max-width: 1100px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+}
+
+
+.category-label {
+    color: #00d9ff;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.category-header h1 {
+    margin: 10px 0 8px;
+
+    color: #f4f7fb;
+
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+
+.category-header p {
+    max-width: 500px;
+
+    margin: 0 auto 12px;
+
+    color: #7f8c9c;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+.product-count {
+    color: #657487;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-section {
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.products-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.empty-category {
+    min-height: 300px;
+
+    display: grid;
+    place-content: center;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+
+.empty-category > div {
+    margin-bottom: 10px;
+
+    font-size: 45px;
+}
+
+
+.empty-category h2 {
+    margin: 0 0 8px;
+
+    color: #f3f6fa;
+
+    font-size: 20px;
+}
+
+
+.empty-category p {
+    margin: 0;
+
+    color: #738194;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   NOT FOUND
+========================= */
+
+.category-not-found {
+    min-height: 80vh;
+
+    display: grid;
+    place-content: center;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+
+.category-not-found h1 {
+    color: #f3f6fa;
+}
+
+
+.category-not-found button {
+    padding: 12px 20px;
+
+    color: #00d9ff;
+
+    background: transparent;
+
+    border: 1px solid #00d9ff;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 600px) {
+
+    .category-page {
+        padding:
+            30px 24px 70px;
+    }
+
+
+    .category-header h1 {
+        font-size: 38px;
+    }
+
+
+    .products-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================
+   COMPUTADORA
+========================= */
+
+@media (min-width: 1024px) {
+
+    .category-page {
+        padding:
+            40px 40px 80px;
+    }
+
+
+    .category-header {
+        margin-bottom: 40px;
+    }
+
+
+    .category-header h1 {
+        font-size: 44px;
+    }
+
+
+    .products-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 24px;
+    }
+
+}
+
+
+/* =========================
+   PANTALLAS GRANDES
+========================= */
+
+@media (min-width: 1400px) {
+
+    .products-grid {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+    }
+
+}
